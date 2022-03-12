@@ -111,7 +111,7 @@ class _FlipBookState extends State<FlipBook> {
       paintList.add(stackEle());
     });
 
-    log(paintList.length.toString() + "len");
+    log(paintList.length.toString() + "length");
   }
 
   CustomPaint stackEle() {
