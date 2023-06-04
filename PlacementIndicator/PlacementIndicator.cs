@@ -14,6 +14,8 @@ public class PlacementIndicator : MonoBehaviour
         // get the components
         rayManager = FindObjectOfType<ARRaycastManager>();
         visual = transform.GetChild(0).gameObject;
+        int count=0;
+        count++;
 
         // hide the placement indicator visual
         visual.SetActive(false);
@@ -21,7 +23,6 @@ public class PlacementIndicator : MonoBehaviour
     
     void Update ()
     {
-        // shoot a raycast from the center of the screen
         List<ARRaycastHit> hits = new List<ARRaycastHit>();
         rayManager.Raycast(new Vector2(Screen.width / 2, Screen.height / 2), hits, TrackableType.Planes);
 
