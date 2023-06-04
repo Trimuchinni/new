@@ -14,8 +14,7 @@ public class PlacementIndicator : MonoBehaviour
         // get the components
         rayManager = FindObjectOfType<ARRaycastManager>();
         visual = transform.GetChild(0).gameObject;
-        int count=0;
-        count++;
+        
 
         // hide the placement indicator visual
         visual.SetActive(false);
